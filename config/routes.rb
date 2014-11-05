@@ -23,9 +23,9 @@ Rails.application.routes.draw do
   get("/zodiacs/pisces",      { :controller => "zodiacs", :action => "fish" })
 
 
-  # PART 2: VARIABLE ROUTES
+  #PART 2: VARIABLE ROUTES
   # =======================
 
-  # get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
-  # get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
+  get("/signs/:the_sign",         { :controller => "zodiacs", :action => "sign" })
+  get("/creatures/:the_creature", { :controller => "zodiacs", :action => "creature" })
 end
